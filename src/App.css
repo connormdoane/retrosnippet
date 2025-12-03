@@ -1,0 +1,147 @@
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header {
+  background-color: #c0c0c0;
+  border: 2px solid #ffffff;
+  border-right-color: #404040;
+  border-bottom-color: #404040;
+  box-shadow: 2px 2px 0 #000000;
+  padding: 4px;
+}
+
+header .title-bar {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  color: white;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+header .window-controls {
+  display: flex;
+  gap: 2px;
+}
+
+header .window-button {
+  width: 16px;
+  height: 14px;
+  background: #c0c0c0;
+  border: 1px solid #ffffff;
+  border-right-color: #404040;
+  border-bottom-color: #404040;
+  box-shadow: 1px 1px 0 #000000;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: black;
+  cursor: default;
+}
+
+header .content {
+  background: #ffffff;
+  border: 2px solid #404040;
+  border-right-color: #ffffff;
+  border-bottom-color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000080;
+  margin: 0;
+  font-family: 'Tahoma', 'MS Sans Serif', sans-serif;
+  text-shadow: 1px 1px 0px #808080;
+}
+
+header p {
+  color: #000000;
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.snippet-wrapper {
+  padding: 2.4rem;
+  background: #008080;
+  width: fit-content;
+  position: relative;
+}
+
+.app-container.dark-mode .snippet-wrapper {
+  background: #000000;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+  font-size: 0.7rem;
+  font-family: 'Tahoma', 'MS Sans Serif', sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  user-select: none;
+}
+
+.app-container.dark-mode .watermark {
+  color: rgba(0, 255, 0, 0.3);
+}
+
+/* Global Dark Mode */
+.app-container.dark-mode {
+  background: #000000;
+}
+
+.app-container.dark-mode header {
+  background-color: #404040;
+  border-color: #808080;
+  border-right-color: #202020;
+  border-bottom-color: #202020;
+}
+
+.app-container.dark-mode header .title-bar {
+  background: linear-gradient(90deg, #000000, #404040);
+}
+
+.app-container.dark-mode header .window-button {
+  background: #404040;
+  border-color: #808080;
+  border-right-color: #202020;
+  border-bottom-color: #202020;
+  color: white;
+}
+
+.app-container.dark-mode header .content {
+  background: #000000;
+  border-color: #808080;
+  border-right-color: #404040;
+  border-bottom-color: #404040;
+}
+
+.app-container.dark-mode header h1 {
+  color: #00ff00;
+  text-shadow: 1px 1px 0px #008000;
+}
+
+.app-container.dark-mode header p {
+  color: #00ff00;
+}

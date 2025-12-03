@@ -1,0 +1,118 @@
+.snippet-card-container {
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    width: fit-content;
+    min-width: 300px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-align: left;
+}
+
+.window-title-input {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Tahoma', 'Verdana', sans-serif;
+    outline: none;
+    width: 100%;
+}
+
+/* Retro Theme */
+.theme-retro {
+    background-color: #c0c0c0;
+    border: 2px solid #ffffff;
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+    box-shadow: 2px 2px 0 #000000;
+    border-radius: 0;
+    padding: 4px;
+    font-family: 'Tahoma', 'Verdana', sans-serif;
+}
+
+.theme-retro .window-title-bar {
+    background: linear-gradient(90deg, #000080, #1084d0);
+    color: white;
+    padding: 2px 4px;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.theme-retro .window-controls {
+    display: flex;
+    gap: 2px;
+}
+
+.theme-retro .window-button {
+    width: 16px;
+    height: 14px;
+    background: #c0c0c0;
+    border: 1px solid #ffffff;
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+    box-shadow: 1px 1px 0 #000000;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: black;
+    cursor: default;
+}
+
+.theme-retro .editor-wrapper {
+    background: #ffffff;
+    border: 2px solid #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    padding: 0.5rem;
+    color: black;
+}
+
+/* Retro Dark Mode Overrides */
+.theme-retro.dark-mode {
+    background-color: #404040;
+    border-color: #808080;
+    border-right-color: #202020;
+    border-bottom-color: #202020;
+}
+
+.theme-retro.dark-mode .window-title-bar {
+    background: linear-gradient(90deg, #000000, #404040);
+}
+
+.theme-retro.dark-mode .window-button {
+    background: #404040;
+    border-color: #808080;
+    border-right-color: #202020;
+    border-bottom-color: #202020;
+    color: white;
+}
+
+.theme-retro.dark-mode .editor-wrapper {
+    background: #000000;
+    border-color: #808080;
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+    color: #00ff00;
+}
+
+.theme-retro.dark-mode .window-title-input {
+    color: #00ff00;
+}
+
+/* Editor Overrides */
+.editor-wrapper textarea {
+    outline: none;
+}
+
+.editor-wrapper pre {
+    font-family: 'Fira Code', 'Consolas', monospace !important;
+    font-size: 14px;
+}

@@ -1,0 +1,194 @@
+.controls-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #c0c0c0;
+    border: 2px solid #ffffff;
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+    box-shadow: 2px 2px 0 #000000;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    background: #c0c0c0;
+    padding: 0.75rem;
+    border: 2px solid #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.control-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Tahoma', 'MS Sans Serif', sans-serif;
+}
+
+.toggle-group {
+    display: flex;
+    background: #c0c0c0;
+    padding: 0;
+    gap: 4px;
+}
+
+.toggle-btn {
+    background: #c0c0c0;
+    border: 2px solid #ffffff;
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+    box-shadow: 1px 1px 0 #000000;
+    color: #000000;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: none;
+    font-size: 0.9rem;
+    font-family: 'Tahoma', 'MS Sans Serif', sans-serif;
+    font-weight: normal;
+}
+
+.toggle-btn:hover {
+    background: #d4d4d4;
+}
+
+.toggle-btn:active {
+    border: 2px solid #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    box-shadow: inset 1px 1px 0 #000000;
+}
+
+.toggle-btn.active {
+    background: #000080;
+    color: white;
+    border: 2px solid #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    box-shadow: inset 1px 1px 0 #000000;
+    font-weight: bold;
+}
+
+.color-input {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 2px solid #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    cursor: pointer;
+    background: none;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #c0c0c0;
+    color: #000000;
+    border: 2px solid #ffffff;
+    border-right-color: #404040;
+    border-bottom-color: #404040;
+    box-shadow: 1px 1px 0 #000000;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: none;
+    margin-left: auto;
+    font-family: 'Tahoma', 'MS Sans Serif', sans-serif;
+}
+
+.download-btn:hover {
+    background: #d4d4d4;
+}
+
+.download-btn:active {
+    border: 2px solid #404040;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    box-shadow: inset 1px 1px 0 #000000;
+}
+
+@media (max-width: 768px) {
+    .controls-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .download-btn {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+/* Global Dark Mode for Controls */
+.app-container.dark-mode .controls-container {
+    background-color: #404040;
+    border-color: #808080;
+    border-right-color: #202020;
+    border-bottom-color: #202020;
+}
+
+.app-container.dark-mode .control-group {
+    background: #404040;
+    border-color: #808080;
+    border-right-color: #202020;
+    border-bottom-color: #202020;
+}
+
+.app-container.dark-mode .control-label {
+    color: #00ff00;
+}
+
+.app-container.dark-mode .toggle-btn {
+    background: #404040;
+    border-color: #808080;
+    border-right-color: #202020;
+    border-bottom-color: #202020;
+    color: #00ff00;
+}
+
+.app-container.dark-mode .toggle-btn:hover {
+    background: #505050;
+}
+
+.app-container.dark-mode .toggle-btn:active {
+    border-color: #202020;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+}
+
+.app-container.dark-mode .toggle-btn.active {
+    background: #000000;
+    color: #00ff00;
+    border-color: #202020;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+}
+
+.app-container.dark-mode .download-btn {
+    background: #404040;
+    color: #00ff00;
+    border-color: #808080;
+    border-right-color: #202020;
+    border-bottom-color: #202020;
+}
+
+.app-container.dark-mode .download-btn:hover {
+    background: #505050;
+}
+
+.app-container.dark-mode .download-btn:active {
+    border-color: #202020;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+}
